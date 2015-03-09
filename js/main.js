@@ -34,20 +34,20 @@ function initScene() {
     // Box
     var geometry = new THREE.BoxGeometry( 30, 30, 30 );
     var material = new THREE.MeshLambertMaterial( { color: 0xffffff } );
-    var box = new THREE.Mesh( geometry, material );
+    box = new THREE.Mesh( geometry, material );
     box.position.set(0, 0, 0);
     scene.add(box);
     
     // Sphere
     var sphere = new THREE.SphereGeometry(30);
     var cubeMaterial = new THREE.MeshLambertMaterial( { color: 0xff0000 } );
-    var cube = new THREE.Mesh( sphere, cubeMaterial );
+    cube = new THREE.Mesh( sphere, cubeMaterial );
     cube.position.y = 30;
     scene.add(cube);
     
     var sphere = new THREE.SphereGeometry(20);
     var cubeMaterial = new THREE.MeshLambertMaterial( { color: 0x00ff00 } );
-    var cube2 = new THREE.Mesh( sphere, cubeMaterial );
+    cube2 = new THREE.Mesh( sphere, cubeMaterial );
     cube2.position.y = 20;
     scene.add(cube2);
     
