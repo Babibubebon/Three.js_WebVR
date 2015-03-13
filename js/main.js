@@ -138,9 +138,9 @@ function toggleFullScreen() {
         } else if (document.documentElement.msRequestFullScreen) {
             document.documentElement.msRequestFullscreen();
         } else if (document.documentElement.mozRequestFullScreen) {
-            document.documentElement.mozRequestFullScreen();
+            document.documentElement.mozRequestFullScreen({vrDisplay: vrHMD});
         } else if (document.documentElement.webkitRequestFullScreen) {
-            document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+            document.documentElement.webkitRequestFullScreen({vrDisplay: vrHMD});
         }
 
     } else {
